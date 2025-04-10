@@ -12,7 +12,9 @@ function App() {
         <div className="container m-auto">
           <BlogHero />
           <AllBlogs />
+          <div className="py-5">
           <BlogCard />
+          </div>
         </div>
       </div>
       <Footer />

@@ -1,7 +1,21 @@
-import { useState } from "react"
+import { useEffect, useState } from "react"
 import { ArrowRight } from "lucide-react";
 const BlogCard = () => {
     const [hover, setHover] = useState(false);
+    const [blog, setBlogs] = useState([]);
+    const fetchBlogs = async () => {
+        try {
+            const res = await fetch("https://hr.mediusware.xyz/api/website/blogs");
+            // const data = await res.json();
+            console.log("Res", res);
+            // setBlogs(data?.data || [])
+        } catch (error) {
+            console.error("Failed to fetch blogs")
+        }
+    }
+    useEffect(() => {
+        fetchBlogs();
+      });
     return (
       <div className="max-w-xd rounded-xl overflow-hidden shadow-md transition-all duration-300 bg-white cursor-pointer mb-5"
       onMouseEnter = {() => setHover(true)}
