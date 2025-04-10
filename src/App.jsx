@@ -1,5 +1,6 @@
 import BlogHero from "./components/BlogHero";
 import AllBlogs from "./components/AllBlogs";
+import BlogCard from "./components/BlogCard/BlogCard";
 import Footer from "./components/Footer";
 import Header from "./components/Header/Header";
 
@@ -11,6 +12,7 @@ function App() {
         <div className="container m-auto">
           <BlogHero />
           <AllBlogs />
+          <BlogCard />
         </div>
       </div>
       <Footer />

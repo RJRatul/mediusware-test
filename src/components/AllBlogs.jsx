@@ -1,7 +1,7 @@
 const AllBlogs = () => {
   return (
     <div className="container">
-      <div className="flex items-center justify-between gap-3 md:flex-row flex-col">
+      <div className="flex items-center justify-center gap-3 md:flex-row flex-col">
         <p className="sm:text-[48px] text-2xl leading-8 font-bold">
           All <span className="text-[#00A88E]"> Blogs</span>
         </p>
